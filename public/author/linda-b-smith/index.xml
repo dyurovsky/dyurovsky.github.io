@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linda B Smith | Dan Yurovsky</title>
+    <link>https://www.danyurovsky.com/author/linda-b-smith/</link>
+      <atom:link href="https://www.danyurovsky.com/author/linda-b-smith/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linda B Smith</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.danyurovsky.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Linda B Smith</title>
+      <link>https://www.danyurovsky.com/author/linda-b-smith/</link>
+    </image>
+    
+    <item>
+      <title>Statistical word learning at scale: The baby&#39;s view is better</title>
+      <link>https://www.danyurovsky.com/publication/yurovsky-2013-statistical/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://www.danyurovsky.com/publication/yurovsky-2013-statistical/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

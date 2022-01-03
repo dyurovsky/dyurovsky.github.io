@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dan Yurovsky</title>
+    <link>https://www.danyurovsky.com/author/</link>
+      <atom:link href="https://www.danyurovsky.com/author/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dan Yurovsky</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Dan Yurovsky.  This work is licensed under [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</copyright>
+    <image>
+      <url>https://www.danyurovsky.com/author/avatar_hufad1839cc273d1077bb23f59fde85f22_135059_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Dan Yurovsky</title>
+      <link>https://www.danyurovsky.com/author/</link>
+    </image>
+    
+  </channel>
+</rss>
