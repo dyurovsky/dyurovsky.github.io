@@ -115,6 +115,8 @@
         
       
         
+      
+        
           
         
       
@@ -286,6 +288,45 @@
 
   
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116040007-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-116040007-1', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -546,6 +587,43 @@
 
           <li class="nav-item">
             <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#resources" data-target="#resources"><span>Resources</span></a>
           </li>
 
           
@@ -892,8 +970,8 @@
     
 
     <div class="article-style">
-      <p>I am interested in how children’s rapid language acquisition emerges from the interaction of their learning mechanisms and the structure of their learning environments. My work combines behavioral and computational analysis of infants’, children’s, and adults’ learning mechanisms with corpus analyses of the language children hear and the world they see. Come visit me at the <a href="https://callab.github.io/" target="_blank" rel="noopener">Communication and Learning Lab</a>.</p>
-<p>I am an active contributor to <a href="http://wordbank.stanford.edu/" target="_blank" rel="noopener">Wordbank</a>, and <a href="http://childes-db.stanford.edu/" target="_blank" rel="noopener">childes-db</a>, open access tools for big data developmental psychology. I’ve also helped to develop some R packages you might find useful. Check out <a href="https://github.com/langcog/tidyboot" target="_blank" rel="noopener">tidyboot</a>, <a href="https://github.com/langcog/wordbankr" target="_blank" rel="noopener">wordbankr</a>, and <a href="https://github.com/langcog/childesr" target="_blank" rel="noopener">childesr</a>. My lab is also a contributor to the <a href="https://manybabies.github.io/" target="_blank" rel="noopener">ManyBabies project</a>, and we are enthusiastic about reproducibility and open science more broadly.</p>
+      <p>I am a cognitive scientist who studies how humans and machines learn from language. I am particularly interested in how synergies between the structure of input and the expectations of learning mechanisms facilitate learning. Much of the work in my lab has focused on children&rsquo;s language learning as a case study. Because children learn from caregivers motivated to communicate with them, they can get a lot of learning done fast.</p>
+<p>I direct the <a href="https://callab.github.io/" target="_blank" rel="noopener">Communication and Learning Lab</a> at CMU. We use a combination of methods to understand learning. First, we use naturalistic observation to characterize the visual and linguistic input available for learning. Second, we use experimental methods to characterize how the mechanisms available for learning. Finally, we use computational models to characterize the consequences of applying these learning mechanisms to the available input.</p>
 
     </div>
 
@@ -1682,6 +1760,98 @@
   
 
 </div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="resources" class="home-section wg-blank  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Resources</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+  <div class="col-12 col-lg-8">
+    <p>I am excited about the movement to use bigger data and more robust methods in Developmental Science. I have contributed to a number of projects that I hope you&rsquo;ll find useful.</p>
+<ul>
+<li><a href="http://wordbank.stanford.edu/" target="_blank" rel="noopener">Wordbank</a> &ndash; An open database of children&rsquo;s vocabulary growth. Also <a href="https://github.com/langcog/wordbankr" target="_blank" rel="noopener">wordbankr</a>, an R API to the database.</li>
+<li><a href="http://wordbank.stanford.edu/" target="_blank" rel="noopener">childes-db</a> &ndash; an open database for storing child language datasets from <a href="https://childes.talkbank.org/" target="_blank" rel="noopener">CHILDES</a>. Also <a href="https://github.com/langcog/childesr" target="_blank" rel="noopener">childesr</a>, an R API to the database.</li>
+<li><a href="https://manybabies.github.io/" target="_blank" rel="noopener">ManyBabies</a> &ndash; a collaborative project for replication and best practices in developmental psychology research.</li>
+<li><a href="https://github.com/langcog/tidyboot" target="_blank" rel="noopener">tidyboot</a> &ndash; an <a href="https://www.tidyverse.org/" target="_blank" rel="noopener">tidyverse</a> compatible package for computing bootstrap statistics.</li>
+</ul>
+
+  </div>
+
 
 
     
